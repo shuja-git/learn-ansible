@@ -38,4 +38,4 @@
 
     - name: print stored variables
       ansible.builtin.debug:
-        msg: {{ out }}
+        msg: "{{ out }}"
