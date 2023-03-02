@@ -22,7 +22,7 @@
       vars:
          URL: task.example.com
       ansible.builtin.debug:
-        msg: "URL = variable from task {{ URL }}"
+        msg: "URL = variable from task {{ URL }}, {{ansible_memfree_mb}}"
 - name: Inventory level variables
   hosts: all
   tasks:
