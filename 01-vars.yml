@@ -14,4 +14,4 @@
   tasks:
    - name:  Print Variables from files
      ansible.builtin.debug:
-     msg: "URL = variable from file {{ URL }}"
+       msg: "URL = variable from file {{ URL }}"
