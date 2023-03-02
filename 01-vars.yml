@@ -4,5 +4,13 @@
    URL: play.example.com
   tasks:
    - name: Print Play Variables
-     ansible.builtin.debug:
+    ansible.builtin.debug:
        msg: URL = {{ URL }}
+- name: Play Variables from Files
+  hosts: localhost
+  vars_file:
+    - var.yml
+  tasks:
+   - name:  Print Variables from file
+     ansible.builtin.debug:
+     msg: URL = {{ URL }}
