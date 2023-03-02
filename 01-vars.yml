@@ -23,3 +23,9 @@
          URL: task.example.com
       ansible.builtin.debug:
         msg: "URL = variable from task {{ URL }}"
+- name: Inventory level variables
+  hosts: all
+  tasks:
+    - name:  Print Variables of Inventory
+      ansible.builtin.debug:
+        msg: "URL = variable from task {{ URL }}"
