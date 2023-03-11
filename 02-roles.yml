@@ -1,4 +1,4 @@
 - name: Role level variables
   hosts: localhost
   roles:
-    - demo
+    - import_role
